@@ -6,7 +6,7 @@ Things to note:
 
 ## `Ws13Application.java` file
 
-* `args` has been overwritten in this. Your command line arguments will not work. To use your own args, comment out the relevant lines in the file
+* `args` has been overwritten in this file. Your command line arguments will not work. To use your own args, comment out the relevant lines in the file
 
 * `args` passed to Spring Application has been transformed to the format: `--dataDir=/opt/tmp/data`. Spring automatically sets `args` passed this way into `properties`, which you can access in other parts of the application. Workshop Task 1 passes in the Command Line Arguments with a white-space instead, and cannot directly make use of Spring's magik. 
 
