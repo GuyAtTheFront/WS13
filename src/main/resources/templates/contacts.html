@@ -9,7 +9,10 @@
 <body>
     <h1>All available contacts </h1>
     <ul data-th-each="name : ${names.keySet()}">
-        <li><a data-th-href="@{'/contact/' + ${name}}" data-th-text=${names.get(name).name}></a></li>
+        <li><a data-th-href="@{'/contact/' + ${name}}" data-th-text=${names.get(name)}></a></li>
+        <!-- <li><a data-th-href="@{'/contact/' + ${name}}" data-th-text=${names.get(name).name}></a></li> -->
+    <!-- <ul data-th-each="name : ${names}"> -->
+        <!-- <li data-th-text="${name.value.name}"></li> -->
     </ul>
         
     </div>

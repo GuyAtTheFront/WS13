@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.ws13.utils.Contacts;
 
 @SpringBootApplication
-public class Ws13Application {
+public class Ws14Application {
 
 	// private static final String BASE_DIR = "src";
 
@@ -18,15 +18,15 @@ public class Ws13Application {
 		args = myArgs;
 
 		// Check exactly two arguments
-		if(args.length != 2) System.exit(-1);
+		// if(args.length != 2) System.exit(-1);
 
 		// Check arg[0] is exactly "--dataDir"
-		if(!args[0].equals("--dataDir")) System.exit(-1);
+		// if(!args[0].equals("--dataDir")) System.exit(-1);
 
 		// Try to create directories
-		if(!Contacts.setupDirectory(args[1])) System.exit(-1);
+		// if(!Contacts.setupDirectory(args[1])) System.exit(-1);
 
-		SpringApplication app = new SpringApplication(Ws13Application.class);
+		SpringApplication app = new SpringApplication(Ws14Application.class);
 		app.run(args[0]+"="+args[1]);
 	}
 
